@@ -1,0 +1,19 @@
+#ifndef CosmicLed_h
+#define CosmicLed_h
+
+#include "Arduino.h"
+
+class Nexus
+{
+  public:
+    Nexus();
+    String Send(String data);
+    String Receive();
+    void Link();
+    bool Compare(String valAtt);
+  private:
+    String data;
+    String valAtt;
+};
+
+#endif

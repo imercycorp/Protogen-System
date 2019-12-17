@@ -1,0 +1,20 @@
+#include "cosmicled.h"
+#include "Arduino.h"
+#include "lib/FastLED.h"
+
+// Nombre LED Bouche Coté
+#define NL_BOU_CD 32
+#define NL_BOU_CG 32
+#define NL_BOU_CM 32
+
+// Nombre LED Eye Coté
+#define NL_EYE_CD 32
+#define NL_EYE_CG 32
+
+// Nombre LED Head
+#define NL_HEAD_CM 32
+
+//Function start
+CosmicLed::CosmicLed() {
+
+}

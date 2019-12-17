@@ -1,0 +1,16 @@
+#include "Arduino.h"
+#include "lib/nexus/nexus.h"
+//The setup function is called once at startup of the sketch
+String DA = "Help";
+Nexus np;
+
+void setup()
+{
+	np.Link();
+}
+
+// The loop function is called in an endless loop
+void loop()
+{
+	np.Send("Help");
+}

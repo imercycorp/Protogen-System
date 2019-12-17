@@ -1,0 +1,22 @@
+#ifndef Nexus_h
+#define Nexus_h
+
+#include "Arduino.h"
+#include "SoftwareSerial.h"
+
+class Nexus
+{
+  public:
+    Nexus(int rx, int tx);
+    String Send(String data);
+    String Receive();
+    int Link(int rx, int tx)
+    bool Compare(String valAtt);
+  private:
+    int _rx, _tx;
+    String data;
+    String valAtt;
+    extern SoftwareSerial SS;
+};
+
+#endif

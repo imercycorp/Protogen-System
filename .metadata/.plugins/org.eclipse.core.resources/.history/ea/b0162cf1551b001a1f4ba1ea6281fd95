@@ -1,0 +1,15 @@
+#include "Arduino.h"
+#include "lib/nexus/nexus.h"
+//The setup function is called once at startup of the sketch
+	String DA = "Help";
+
+void setup()
+{
+	Nexus(0,1);
+}
+
+// The loop function is called in an endless loop
+void loop()
+{
+	String DD = Nexus::Send("Help");
+}

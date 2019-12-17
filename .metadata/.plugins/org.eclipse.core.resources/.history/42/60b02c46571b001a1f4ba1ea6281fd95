@@ -1,0 +1,15 @@
+#include "Arduino.h"
+#include "lib/nexus/nexus.h"
+//The setup function is called once at startup of the sketch
+	String DA = "Help";
+
+void setup()
+{
+	extern Nexus np = Nexus(0,1);
+}
+
+// The loop function is called in an endless loop
+void loop()
+{
+	String DD = np.Send("Help");
+}

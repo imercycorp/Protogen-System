@@ -1,0 +1,13 @@
+#ifndef __INC_FASTLED_AVR_H
+#define __INC_FASTLED_AVR_H
+
+#include "../../../fastled/platforms/avr/clockless_trinket.h"
+#include "../../../fastled/platforms/avr/fastpin_avr.h"
+#include "../../../fastled/platforms/avr/fastspi_avr.h"
+
+// Default to using PROGMEM
+#ifndef FASTLED_USE_PROGMEM
+#define FASTLED_USE_PROGMEM 1
+#endif
+
+#endif

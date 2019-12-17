@@ -1,0 +1,11 @@
+#ifndef __INC_FASTLED_ARM_NRF52_H
+#define __INC_FASTLED_ARM_NRF52_H
+
+#include "../../../../fastled/platforms/arm/nrf52/arbiter_nrf52.h"
+#include "../../../../fastled/platforms/arm/nrf52/clockless_arm_nrf52.h"
+#include "../../../../fastled/platforms/arm/nrf52/fastpin_arm_nrf52.h"
+#include "../../../../fastled/platforms/arm/nrf52/fastspi_arm_nrf52.h"
+#include "../../../../fastled/platforms/arm/nrf52/led_sysdefs_arm_nrf52.h"
+
+#endif // #ifndef __INC_FASTLED_ARM_NRF52_H
+

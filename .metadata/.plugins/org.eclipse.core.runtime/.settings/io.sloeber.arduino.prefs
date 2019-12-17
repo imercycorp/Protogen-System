@@ -1,0 +1,17 @@
+Automatically\ import\ libraries=true
+FbStatus=115
+FsStatus=7
+FuStatus=8
+JANTJE.TEMPLATE_USE_DEFAULT=defaultIno
+Last\ Used\ Upload\ port=/dev/cu.usbmodem14201
+Last\ used\ Board=nona4809
+Last\ used\ Boards\ file=/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/megaavr/1.8.5/boards.txt
+Last\ used\ Examples=
+Private\ Library\ Path=/Users/rhenar/Arduino/libraries
+Private\ hardware\ Path=/Users/rhenar/Arduino/hardware
+Use\ the\ algoritm\ to\ find\ the\ toolchain\ like\ Arduino\ IDE=true
+add\ pragma\ once\ to\ headers=true
+eclipse.preferences.version=1
+lFsStatus=122
+last\ Used\ upload\ Protocol=Default
+last\ used\ Board\ custom\ option\ selections=mode\=off

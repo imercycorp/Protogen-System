@@ -1,0 +1,8 @@
+#include "cosmicled.h"
+#include "Arduino.h"
+#include <FastLED.h>
+
+//Function start
+CosmicLed::CosmicLed() {
+
+}

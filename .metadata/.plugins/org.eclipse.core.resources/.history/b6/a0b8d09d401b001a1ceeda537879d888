@@ -1,0 +1,19 @@
+#ifndef Nexus_h
+#define Nexus_h
+
+#include "Arduino.h"
+
+class Nexus
+{
+  public:
+    Nexus(int rx, int tx);
+    void Send(String data);
+    void Receive();
+    void Compare(String valAtt);
+  private:
+    int _rx, _tx;
+    String data;
+    String valAtt;
+};
+
+#endif

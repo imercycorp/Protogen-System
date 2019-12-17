@@ -1,0 +1,47 @@
+#include "Arduino.h"
+#include "nexus.h"
+#include "SoftwareSerial.h"
+String readString;
+extern SoftwareSerial SerialP = SoftwareSerial(0,1);
+
+
+//Function start
+Nexus::Nexus() { // @suppress("Class members should be properly initialized")
+	int Stat = 1;
+}
+
+int Nexus::Link(){
+    SerialP.begin(57600);
+    return 1;
+}
+
+String Nexus::Send(String data){
+	SerialP.print(data);
+	return "OK";
+}
+
+String Nexus::Receive(){
+
+    while(SerialP.available()) {
+        delay(10);
+        return SerialP.readString();
+    }
+    return "[ERR - 01000] Nothing To Receive";
+
+}
+
+bool Nexus::Compare(String valAtt) {
+    while(SerialP.available()) {
+        delay(10);
+        String c = SerialP.readString();
+        readString += c;
+    }
+
+    if (readString.equals(valAtt)) {
+        return true;
+    } else
+    {
+        return false;
+    }
+    
+}
